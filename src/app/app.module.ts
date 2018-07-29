@@ -6,6 +6,9 @@ import { AccordionModule } from 'primeng/components/accordion/accordion';
 import { PanelModule } from 'primeng/components/panel/panel';
 import { ButtonModule } from 'primeng/components/button/button';
 import { RadioButtonModule } from 'primeng/components/radioButton/radioButton';
+import {TabMenuModule} from 'primeng/tabmenu';
+import {MenuItem} from 'primeng/api';
+import {MenubarModule} from 'primeng/menubar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +24,8 @@ import { FormsModule } from '@angular/forms';
     AccordionModule,
     PanelModule,
     ButtonModule,
+    TabMenuModule,
+    MenubarModule,
     RadioButtonModule
   ],
   providers: [],
