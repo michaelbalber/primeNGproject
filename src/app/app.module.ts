@@ -9,10 +9,12 @@ import { RadioButtonModule } from 'primeng/components/radioButton/radioButton';
 import {TabMenuModule} from 'primeng/tabmenu';
 import {MenuItem} from 'primeng/api';
 import {MenubarModule} from 'primeng/menubar';
+import {GMapModule} from 'primeng/components/gmap/gmap';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { AppRoutingModule } from './/app-routing.module';
     TabMenuModule,
     MenubarModule,
     RadioButtonModule,
+    GMapModule,
+    ChartModule,
     AppRoutingModule
   ],
   providers: [],

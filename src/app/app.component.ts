@@ -12,8 +12,35 @@ export class AppComponent {
   itemsTab: MenuItem[];
     
   activeItem: MenuItem;
+  options: any;
+    
+  overlays: any[];
+  data: any;
 
+  constructor() {
+      this.data = {
+          labels: ['A','B','C'],
+          datasets: [
+              {
+                  data: [300, 50, 100],
+                  backgroundColor: [
+                      "#FF6384",
+                      "#36A2EB",
+                      "#FFCE56"
+                  ],
+                  hoverBackgroundColor: [
+                      "#FF6384",
+                      "#36A2EB",
+                      "#FFCE56"
+                  ]
+              }]    
+          };
+  }
   ngOnInit() {
+    this.options = {
+        center: {lat: 36.890257, lng: 30.707417},
+        zoom: 12
+    };
       this.itemsTab = [
         {label: 'Stats', icon: 'fa fa-fw fa-bar-chart'},
         {label: 'Calendar', icon: 'fa fa-fw fa-calendar'},
