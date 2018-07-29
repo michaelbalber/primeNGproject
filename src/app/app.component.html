@@ -1,19 +1,24 @@
 <div class="ui-g"  style="height: 100%" >
-  <div class="ui-g-8"  style="background-color: indianred">
+  <div class="ui-g-8"  style="background-color: indianred; display: flex; flex-direction: column;">
     <div class="ui-g-12">
         <p-menubar [model]="items"></p-menubar>
     </div>
     <div class="ui-g-12">
           <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
     </div>
-    <div class="ui-g-12" style="background-color:peachpuff;">
+    <div class="ui-g-12" style="background-color:peachpuff; flex:1; ">
 
-          <div class="ui-g-4" style="background-color: orangered;">dsd</div>
-          <div class="ui-g-8">
+          <div class="ui-g-6" style="background-color: orangered;">
+          </div>
+          <div class="ui-g-6" style="display: flex; flex-direction: column; background-color: chocolate;">
+                    <p-chart type="pie" [data]="data" responsive="true" height="100%" style="flex: 1"></p-chart>
+                    <p-chart type="pie" [data]="data"  responsive="true"  height="100%" style="flex: 1"></p-chart>
+                    <p-chart type="pie" [data]="data"  responsive="true" height="100%" style="flex: 1"></p-chart>
+
           </div>
     </div>
   </div>
-  <div class="ui-g-4" style="background-color: gold; height: 100%;">
+  <div class="ui-g-4" style="background-color: gold;">
       <div class="ui-g-4">
           Textarea
       </div>
