@@ -1,5 +1,8 @@
 <div class="ui-g"  style="height: 100%" >
-  <div class="ui-g-8"  style="background-color: indianred; display: flex; flex-direction: column;">
+        <div class="ui-g-12" style="padding: 0;">
+                <p-menubar [model]="items" id="menuBar"></p-menubar>
+        </div>
+    <div class="ui-g-8"  style="background-color: indianred; display: flex; flex-direction: column;">
     <div class="ui-g-12">
         <p-menubar [model]="items"></p-menubar>
     </div>
@@ -8,12 +11,12 @@
     </div>
     <div class="ui-g-12" style=" flex:1; ">
 
-          <div class="ui-g-6" style="height: 100%;">
+          <div class="ui-g-6" style="height: 100%;padding-left: 0;">
                 <div class="ui-g-12" style="height: 100%; background-color: black;">    
                 </div>
           </div>
           
-          <div class="ui-g-6" style="height:100%; display: flex; flex-direction: column;">
+          <div class="ui-g-6" style="height:100%; display: flex; flex-direction: column;padding-right: 0;">
             <div class="ui-g-12" style="flex:1 ;background-color: black;">    
                 <p-chart type="pie" [data]="data" responsive="true" height="100%" ></p-chart>
             </div>
@@ -26,7 +29,7 @@
           </div>
     </div>
   </div>
-  <div class="ui-g-4" style="background-color: gold;">
+  <div class="ui-g-4" style="background-color: moccasin">
       <div class="ui-g-4">
           Textarea
       </div>
