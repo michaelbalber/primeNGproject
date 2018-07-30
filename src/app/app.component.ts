@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import {MenuItem} from 'primeng/api';
 
+interface City {
+  name: string;
+  code: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent {
   title = 'app';
   items: MenuItem[];
@@ -16,8 +23,19 @@ export class AppComponent {
     
   overlays: any[];
   data: any;
+  cities : City[];
+  selectedCity: City;
 
   constructor() {
+    this.cities = [
+      {name: 'New York', code: 'NY'},
+      {name: 'Rome', code: 'RM'},
+      {name: 'London', code: 'LDN'},
+      {name: 'Istanbul', code: 'IST'},
+      {name: 'Paris', code: 'PRS'}
+     ];
+    this.selectedCity = {name: 'Paris', code: 'PRS'};
+
       this.data = {
           labels: ['A','B','C'],
           datasets: [

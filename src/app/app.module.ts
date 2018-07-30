@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {ChartModule} from 'primeng/chart';
 import {CardModule} from 'primeng/card';
+import {DropdownModule} from 'primeng/dropdown';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import {CardModule} from 'primeng/card';
     GMapModule,
     ChartModule,
     CardModule,
+    DropdownModule,
     AppRoutingModule
   ],
   providers: [],

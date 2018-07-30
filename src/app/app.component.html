@@ -1,15 +1,15 @@
 <div class="ui-g"  style="height: 100%" >
-        <div class="ui-g-12" style="padding: 0;">
-                <p-menubar [model]="items" id="menuBar"></p-menubar>
-        </div>
+    <div class="ui-g-12" style="padding: 0;">
+        <p-menubar [model]="items" id="menuBar"></p-menubar>
+    </div>
     <div class="ui-g-8"  style="background-color: indianred; display: flex; flex-direction: column;">
-    <div class="ui-g-12">
-        <p-menubar [model]="items"></p-menubar>
-    </div>
-    <div class="ui-g-12">
-          <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
-    </div>
-    <div class="ui-g-12" style=" flex:1; ">
+        <div class="ui-g-12">
+            <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+        </div>
+        <div class="ui-g-12">
+            <p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+        </div>
+        <div class="ui-g-12" style=" flex:1; ">
 
           <div class="ui-g-6" style="height: 100%;padding-left: 0;">
                 <div class="ui-g-12" style="height: 100%; background-color: black;">    
@@ -27,11 +27,11 @@
                 <p-chart type="pie" [data]="data" responsive="true" height="100%" ></p-chart>
             </div>
           </div>
+        </div>
     </div>
-  </div>
-  <div class="ui-g-4" style="background-color: moccasin">
+    <div class="ui-g-4" style="background-color: moccasin">
         <p-card title="Spider Man" [style]="{width: '100%'}">
-                <div>Spider Man is the greatest hero everrrrrr</div>
-            </p-card>
-  </div>
+            <div>Spider Man is the greatest hero everrrrrr</div>
+        </p-card>
+    </div>
 </div>
