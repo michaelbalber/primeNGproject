@@ -6,15 +6,23 @@
     <div class="ui-g-12">
           <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
     </div>
-    <div class="ui-g-12" style="background-color:peachpuff; flex:1; ">
+    <div class="ui-g-12" style=" flex:1; ">
 
-          <div class="ui-g-6" style="background-color: orangered;">
+          <div class="ui-g-6" style="height: 100%;">
+                <div class="ui-g-12" style="height: 100%; background-color: black;">    
+                </div>
           </div>
-          <div class="ui-g-6" style="display: flex; flex-direction: column; background-color: chocolate;">
-                    <p-chart type="pie" [data]="data" responsive="true" height="100%" style="flex: 1"></p-chart>
-                    <p-chart type="pie" [data]="data"  responsive="true"  height="100%" style="flex: 1"></p-chart>
-                    <p-chart type="pie" [data]="data"  responsive="true" height="100%" style="flex: 1"></p-chart>
-
+          
+          <div class="ui-g-6" style="height:100%; display: flex; flex-direction: column;">
+            <div class="ui-g-12" style="flex:1 ;background-color: black;">    
+                <p-chart type="pie" [data]="data" responsive="true" height="100%" ></p-chart>
+            </div>
+            <div class="ui-g-12" style="flex:1;background-color:black;margin-top: 8px;">    
+                <p-chart type="pie" [data]="data" responsive="true" height="100%" ></p-chart>
+            </div>
+            <div class="ui-g-12" style="flex:1;background-color:black;margin-top: 8px;">    
+                <p-chart type="pie" [data]="data" responsive="true" height="100%" ></p-chart>
+            </div>
           </div>
     </div>
   </div>
